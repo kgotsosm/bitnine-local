@@ -67,10 +67,10 @@ Before you begin, ensure you have the following software installed:
 ### Usage
 
 After completing the installation steps, you can start the development server for the front end:
-```shell
+```
    $ npm run dev
 ```
-1. Navigate to the server directory:
+1. Open a new terminal and navigate to the server directory of the bitnine-local directory:
 ```shell
    $ cd server
 ```
