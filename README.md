@@ -1,14 +1,12 @@
-# Kgotso Makhalimele - Bitnine Clone
+# Kgotso Makhalimele - Bitnine Clone - Local
 
 ### Question 5-1 and Question 5-2
 
-This project is a clone of the [bitnine.net](https://bitnine.net/) website. It was created as part of my internship coding challenge and is **hosted on [bitnine.pages.dev](https://bitnine.pages.dev/)**.
+This project is a clone of the [bitnine.net](https://bitnine.net/) website. It was created as part of my internship coding challenge.
 
-
-## Deployed with &nbsp;<a href="https://pages.dev"><img alt="Cloudflare Pages" src="https://user-images.githubusercontent.com/23264/106598434-9e719e00-654f-11eb-9e59-6167043cfa01.png" width="16"></a> &nbsp;Cloudflare Pages
 ## Table of Contents
 
-- [Kgotso Makhalimele - Bitnine Clone](#kgotso-makhalimele---bitnine-clone)
+- [Kgotso Makhalimele - Bitnine Clone](#kgotso-makhalimele---bitnine-local)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Features](#features)
@@ -25,6 +23,7 @@ This project is a clone of the official Bitnine website and demonstrates my abil
 ## Features
 
 - Replicates the design and layout of the bitnine.net website.
+-  A login and register page
 - Utilizes React for building the user interface.
 - Implements Vite for fast development and builds.
 - Uses Tailwind CSS for styling.
@@ -36,6 +35,8 @@ This project is a clone of the official Bitnine website and demonstrates my abil
 - Vite
 - Tailwind CSS
 - Ionicons
+- Node.js
+- MongoDB
 
 ## Getting Started
 
@@ -66,7 +67,25 @@ Before you begin, ensure you have the following software installed:
 
 ### Usage
 
-After completing the installation steps, you can start the development server:
+After completing the installation steps, you can start the development server for the front end:
 
 ```shell
    $ npm run dev
+
+1. Navigate to the server directory:
+```shell
+   $ cd server
+
+3. Install the dependencies:
+
+   ```shell
+   $ npm install
+
+4. Run the server
+
+   ```shell
+   $ npm start
+
+The server will be running on http://localhost:8001.
+
+Register then login on the browser at the address: http://localhost:5173 to view content
