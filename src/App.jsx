@@ -2,29 +2,28 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
 } from "react-router-dom";
-import React, { useState, useEffect } from 'react'
-import { supabase } from './supabase/supabaseClient'
-import Landing from "./pages/Landing";
-import MainContent from "./pages/MainContent";
+import Landing from "./pages/Landing.jsx";
+import SignIn from "./pages/SignIn.jsx";
+import MainContent from "./pages/MainContent.jsx";
+import axios from "axios";
+import { Toaster } from "react-hot-toast";
+
+axios.defaults.baseURL = 'http://localhost:8001'
+axios.defaults.withCredentials = true
 
 export default function App() {
-  const [session, setSession] = useState(null)
-
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session)
-    })
-
-    supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session)
-    })
-  }, [])
 
   return (
-    <div className="overflow-x-hidden overflow-y-clip bg-gray-200">
-        {!session ? <Landing /> : <MainContent key={session.user.id} session={session} />}
-    </div>
+      <>
+        <Toaster position='bottom-right' toastOptions={{duration: 2000}} />
+        <Router>
+          <Routes>
+            <Route path="/" element={<MainContent />} />
+            <Route path="/register" element={<Landing />} />
+            <Route path="/login" element={<SignIn />} />
+          </Routes>
+        </Router>
+      </>
   );
 }

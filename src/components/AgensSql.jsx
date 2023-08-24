@@ -1,4 +1,3 @@
-import React from "react";
 import agens from "../assets/agenssql.png";
 
 const Button = ({ text }) => {
@@ -11,7 +10,7 @@ const Button = ({ text }) => {
 
 function AgensSql() {
   return (
-    <div className="bg-white py-24 mt-10 lg:mt-15">
+    <div className="bg-white py-24 mt-10 lg:mt-15 lg:my-24">
       <div className="flex flex-col justify-center items-center">
         <img className="pt-5 md:pt-18 pb-10" src={agens} />
         <div className="md:w-1/2 px-8">

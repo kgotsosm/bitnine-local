@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../../assets/bitnine-logo.png";
-import { supabase } from "../../supabase/supabaseClient";
 import SocialIcons from "../SocialIcons";
 import { Input } from "@material-tailwind/react";
 import Translate from "../Translate";
@@ -134,12 +133,6 @@ const Navbar = () => {
                 Try Free
               </button>
             </a>
-            <button
-              className="bg-blue-800 uppercase px-4 md:px-6 hover:text-white py-2 text-sm md:text-md rounded md:ml-2 text-yellow-400 md:my-0 my-2"
-              onClick={() => supabase.auth.signOut()}
-            >
-              Logout
-            </button>
           </div>
         </ul>
       </div>

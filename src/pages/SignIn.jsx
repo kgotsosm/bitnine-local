@@ -1,5 +1,6 @@
-import Register from "../components/Register.jsx";
-export default function Landing() {
+import Login from '../components/Login.jsx';
+
+export default function SignIn() {
     return (
         <div className="grid sm:grid-cols-2 md:bg-[#0A192F] bg-white h-screen">
             <div className="px-10 my-auto ">
@@ -8,7 +9,7 @@ export default function Landing() {
                 </h1>
             </div>
             <div className="flex items-center justify-center md:bg-white w-full">
-                <Register />
+                <Login />
             </div>
         </div>
     );

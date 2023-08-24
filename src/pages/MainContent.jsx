@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Navbar, AgensSql, EnterprisePack, Features, PackageDetails, Footer } from "../components";
 
-const MainContent = ({session}) => {
+const MainContent = () => {
 
   return (
     <>
