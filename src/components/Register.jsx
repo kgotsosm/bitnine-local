@@ -19,7 +19,7 @@ export default function Register() {
         const {name, email, password} = data
 
           try {
-            const {data} = await axios.post('/register', {
+            const {data} = await axios.post('/', {
                  name, email, password
             })
              if(data.error) {

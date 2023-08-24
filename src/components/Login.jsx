@@ -28,7 +28,7 @@ export default function Login() {
                     email: '',
                     password: ''
                 })
-                navigate('/')
+                navigate('/home')
             }
         } catch (error) {
             console.log(error)
@@ -74,7 +74,7 @@ export default function Login() {
 
             </form>
             <div className="mt-6">
-                <Link to="/register">
+                <Link to="/">
                     <p className="text-gray-600 hover:text-gray-900 cursor-pointer text-center underline">Don&apos;t have an account? Register</p>
                 </Link>
             </div>

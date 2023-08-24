@@ -19,8 +19,8 @@ export default function App() {
         <Toaster position='bottom-right' toastOptions={{duration: 2000}} />
         <Router>
           <Routes>
-            <Route path="/" element={<MainContent />} />
-            <Route path="/register" element={<Landing />} />
+            <Route path="/home" element={<MainContent />} />
+            <Route path="/" element={<Landing />} />
             <Route path="/login" element={<SignIn />} />
           </Routes>
         </Router>

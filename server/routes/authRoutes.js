@@ -10,8 +10,8 @@ router.use(cors({
 }))
 
 // Define endpoints
-router.get('/', test);
-router.post('/register', registerUser);
+router.get('/test', test);
+router.post('/', registerUser);
 router.post('/login', loginUser)
 
 module.exports = router;
