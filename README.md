@@ -52,38 +52,32 @@ Before you begin, ensure you have the following software installed:
 
 1. Clone the repository:
 
-   ```shell
    $ git clone https://github.com/kgotsosm/bitnine.git
 
 2. Navigate to the project directory:
 
-   ```shell
    $ cd bitnine
 
 3. Install the dependencies:
-
-   ```shell
+   
    $ npm install
 
 ### Usage
 
 After completing the installation steps, you can start the development server for the front end:
 
-```shell
    $ npm run dev
 
 1. Navigate to the server directory:
-```shell
+
    $ cd server
 
 3. Install the dependencies:
 
-   ```shell
    $ npm install
 
 4. Run the server
 
-   ```shell
    $ npm start
 
 The server will be running on http://localhost:8001.
