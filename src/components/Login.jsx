@@ -68,7 +68,7 @@ export default function Login() {
                         value={data.password} onChange={(e) => setData({...data, password: e.target.value})}
                     />
                 </div>
-                <button type='submit' className="bg-green-600 hover:bg-green-800 text-white w-full rounded-sm mx-4 py-1">
+                <button type='submit' className="bg-green-600 hover:bg-green-800 text-white w-[200px] rounded-sm mx-4 py-1">
                     Login
                 </button>
 
