@@ -6,7 +6,7 @@ const { test, registerUser, loginUser } = require('../controllers/authController
 // Configure CORS with credentials for the router
 router.use(cors({
     credentials: true,
-    origin: 'http://localhost:5173',
+    origin: 'https://bitnine-5q8q.onrender.com/login',
 }))
 
 // Define endpoints
